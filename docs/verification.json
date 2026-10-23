@@ -41,7 +41,7 @@
       "passed": 16
     }
   },
-  "remote_ci_observed": false,
+  "remote_ci_observed": true,
   "inputs": [
     {
       "path": "assets/private/cache/basic_precision_candidates.joblib",
@@ -114,5 +114,28 @@
       "sha256": "6b70bbc960be91bc3bad517a61628522d04d182d7f8984dc3904e20c1e7ff708",
       "reference_bytes_equal": true
     }
-  ]
+  ],
+  "remote_ci": {
+    "url": "https://github.com/stefanimp/hybrid-search-ranking/actions/runs/39994015289",
+    "commit": "bb18923c9212468d6639be19599267aad618d821",
+    "conclusion": "success",
+    "jobs": [
+      {
+        "name": "test (windows-latest, 3.12)",
+        "conclusion": "success"
+      },
+      {
+        "name": "test (ubuntu-latest, 3.12)",
+        "conclusion": "success"
+      },
+      {
+        "name": "test (ubuntu-latest, 3.13)",
+        "conclusion": "success"
+      },
+      {
+        "name": "test (windows-latest, 3.13)",
+        "conclusion": "success"
+      }
+    ]
+  }
 }

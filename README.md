@@ -2,7 +2,7 @@
 
 # Hybrid Search Ranking
 
-[![Checks](https://github.com/stefanimp/hybrid-search-ranking/actions/workflows/ci.yml/badge.svg)](https://github.com/stefanimp/hybrid-search-ranking/actions/workflows/ci.yml)
+[![Checks](https://github.com/stefanimp/hybrid-search-ranking/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/stefanimp/hybrid-search-ranking/actions/workflows/ci.yml)
 
 A passage-ranking pipeline combining dense retrieval, lexical signals, cross-encoder scores
 and LightGBM LambdaRank over **100,000 passages**.

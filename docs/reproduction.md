@@ -70,5 +70,6 @@ The maintenance cleanup was checked again against the same reference. All four C
 coincide with one another on these inputs; the optional variants did not change predictions.
 The baseline output digest and current checks are in `verification.json`.
 
-The CI configuration covers Windows/Linux and Python 3.12/3.13. A configured workflow is not
-evidence of a completed remote run. No hidden Kaggle labels were reevaluated.
+[GitHub Actions](https://github.com/stefanimp/hybrid-search-ranking/actions/runs/39994015289) passed the core tests, lint and formatting checks
+on Windows/Linux with Python 3.12/3.13. The verification record identifies the tested commit.
+No hidden Kaggle labels were reevaluated.
