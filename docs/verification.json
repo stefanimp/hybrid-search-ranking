@@ -1,0 +1,118 @@
+{
+  "checked_on": "2026-10-23",
+  "platform": "Windows",
+  "scope": "Software parity with archived artifacts; no new Kaggle evaluation.",
+  "environment": {
+    "python": "3.12.3",
+    "packages": {
+      "colorama": "0.4.6",
+      "hybrid-search-ranking": "1.0.0",
+      "iniconfig": "2.3.1",
+      "joblib": "1.5.3",
+      "lightgbm": "4.6.0",
+      "numpy": "2.3.4",
+      "packaging": "26.3",
+      "pandas": "3.0.2",
+      "pluggy": "1.7.0",
+      "Pygments": "2.21.0",
+      "pytest": "8.4.2",
+      "python-dateutil": "3.0.0",
+      "ruff": "0.17.1",
+      "scikit-learn": "1.8.0",
+      "scipy": "1.18.1",
+      "six": "1.17.0",
+      "threadpoolctl": "3.7.0",
+      "tzdata": "2026.5"
+    }
+  },
+  "tests": {
+    "python_3_12": {
+      "tests": 16,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "passed": 16
+    },
+    "python_3_13": {
+      "tests": 16,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "passed": 16
+    }
+  },
+  "remote_ci_observed": false,
+  "inputs": [
+    {
+      "path": "assets/private/cache/basic_precision_candidates.joblib",
+      "sha256": "86a6bc90bb1481a9c0e236c7aa1874fafb90b41ea3c98e6016547387ce0146ac"
+    },
+    {
+      "path": "assets/private/cache/cross_encoder_dense_100k_top50_scores.joblib",
+      "sha256": "a8112f78a035c78e441f2d7cc0a3c26349f3f9d0db8272b83856ddc04e4bb981"
+    },
+    {
+      "path": "assets/private/cache/cross_encoder_dense_top100_scores.joblib",
+      "sha256": "f1d0ffb475576219ae6aae9e295c693ca67d096056cbf63fdeb387c6ab36b199"
+    },
+    {
+      "path": "assets/private/cache/dense_candidates.joblib",
+      "sha256": "e47efbf43eeec3366980e3b0387a34db4c54e2feac54229fdb9b85e4ef6e9965"
+    },
+    {
+      "path": "assets/private/cache/tfidf_word_titlechar_100k_candidates.joblib",
+      "sha256": "1b662b74675678296f6a53b4932bfdb79d7977314c28485a2373cc6a1ed9c5b7"
+    },
+    {
+      "path": "assets/private/data/corpus_100k.csv",
+      "sha256": "7e88764617e63da561e316e2835f0b6aae92ae33b7f3c2203690c17b9677379f"
+    },
+    {
+      "path": "assets/private/data/test_queries.csv",
+      "sha256": "a65b0b25f9ac31069362d45df178e17d33549a96caf3377ee748e53ab1e21b51"
+    },
+    {
+      "path": "assets/private/data/train_qrels.csv",
+      "sha256": "3428fe51ed0e5f9f947af22c587f8b641cf2676eda32b4559fdf1914d919abac"
+    },
+    {
+      "path": "assets/private/data/train_queries.csv",
+      "sha256": "90b56d5a5918a305e581ecdd908178a146b578bef46adc420f9ebe1a44ee47d9"
+    }
+  ],
+  "original_source_sha256": "1d5af78209f3cdd64629a1c4179a3aeef64884d0dd9ccaaadb5b9c59f5661901",
+  "python_hash_seed": 0,
+  "competition": {
+    "rank": 1,
+    "metric": "MAP@10",
+    "score": 0.63461,
+    "subset": "private",
+    "source": "Final private leaderboard capture reviewed offline; withheld for privacy"
+  },
+  "outputs": [
+    {
+      "file": "submision_final.csv",
+      "rows": 224,
+      "sha256": "6b70bbc960be91bc3bad517a61628522d04d182d7f8984dc3904e20c1e7ff708",
+      "reference_bytes_equal": true
+    },
+    {
+      "file": "submision_pruebas_1.csv",
+      "rows": 224,
+      "sha256": "6b70bbc960be91bc3bad517a61628522d04d182d7f8984dc3904e20c1e7ff708",
+      "reference_bytes_equal": true
+    },
+    {
+      "file": "submision_pruebas_2.csv",
+      "rows": 224,
+      "sha256": "6b70bbc960be91bc3bad517a61628522d04d182d7f8984dc3904e20c1e7ff708",
+      "reference_bytes_equal": true
+    },
+    {
+      "file": "submision_pruebas_3.csv",
+      "rows": 224,
+      "sha256": "6b70bbc960be91bc3bad517a61628522d04d182d7f8984dc3904e20c1e7ff708",
+      "reference_bytes_equal": true
+    }
+  ]
+}

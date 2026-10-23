@@ -1,0 +1,219 @@
+{
+  "features": [
+    {
+      "args": [
+        "¿Cuándo nació María en 1987?",
+        "article#3",
+        "María",
+        "María nació en 1987. Recuperación de información."
+      ],
+      "expected": {
+        "q_len": 3.0,
+        "q_all_len": 5.0,
+        "title_len_log": 0.6931471805599453,
+        "text_len_log": 1.791759469228055,
+        "paragraph": 3.0,
+        "paragraph_prior": 0.7272727272727273,
+        "same_base_as_query_id": 0.0,
+        "title_cov": 0.3333333333333333,
+        "text_cov": 1.0,
+        "title_rare_cov": 0.3333333333333333,
+        "text_rare_cov": 1.0,
+        "title_or_text_cov": 1.0,
+        "query_phrase_in_text": 0.0,
+        "query_phrase_in_title": 0.0,
+        "full_query_in_text": 0.0,
+        "full_query_in_title": 0.0,
+        "number_overlap": 1.0,
+        "has_number_query": 1.0,
+        "first_pos_score": 1.0,
+        "is_definition_query": 0.0,
+        "is_count_query": 0.0,
+        "is_where_query": 0.0,
+        "is_who_query": 0.0,
+        "is_when_query": 1.0
+      }
+    },
+    {
+      "args": [
+        "",
+        "article#3",
+        "María",
+        "María nació en 1987. Recuperación de información."
+      ],
+      "expected": {
+        "q_len": 0.0,
+        "q_all_len": 0.0,
+        "title_len_log": 0.6931471805599453,
+        "text_len_log": 1.791759469228055,
+        "paragraph": 3.0,
+        "paragraph_prior": 0.7272727272727273,
+        "same_base_as_query_id": 0.0,
+        "title_cov": 0.0,
+        "text_cov": 0.0,
+        "title_rare_cov": 0.0,
+        "text_rare_cov": 0.0,
+        "title_or_text_cov": 0.0,
+        "query_phrase_in_text": 0.0,
+        "query_phrase_in_title": 0.0,
+        "full_query_in_text": 0.0,
+        "full_query_in_title": 0.0,
+        "number_overlap": 0.0,
+        "has_number_query": 0.0,
+        "first_pos_score": 0.0,
+        "is_definition_query": 0.0,
+        "is_count_query": 0.0,
+        "is_where_query": 0.0,
+        "is_who_query": 0.0,
+        "is_when_query": 0.0
+      }
+    },
+    {
+      "args": [
+        "Qué significa recuperación",
+        "article#3",
+        "María",
+        "María nació en 1987. Recuperación de información."
+      ],
+      "expected": {
+        "q_len": 2.0,
+        "q_all_len": 3.0,
+        "title_len_log": 0.6931471805599453,
+        "text_len_log": 1.791759469228055,
+        "paragraph": 3.0,
+        "paragraph_prior": 0.7272727272727273,
+        "same_base_as_query_id": 0.0,
+        "title_cov": 0.0,
+        "text_cov": 0.5,
+        "title_rare_cov": 0.0,
+        "text_rare_cov": 0.5,
+        "title_or_text_cov": 0.5,
+        "query_phrase_in_text": 0.0,
+        "query_phrase_in_title": 0.0,
+        "full_query_in_text": 0.0,
+        "full_query_in_title": 0.0,
+        "number_overlap": 0.0,
+        "has_number_query": 0.0,
+        "first_pos_score": 0.7920792079207921,
+        "is_definition_query": 1.0,
+        "is_count_query": 0.0,
+        "is_where_query": 0.0,
+        "is_who_query": 0.0,
+        "is_when_query": 0.0
+      }
+    }
+  ],
+  "candidates": {
+    "caches": {
+      "basic": {
+        "q": [
+          {
+            "document_id": "a",
+            "basic_score": 3,
+            "best_bm25": 2,
+            "sources": {
+              "bm25-title": 1
+            }
+          }
+        ]
+      },
+      "ce100k": {
+        "q": [
+          [
+            "b",
+            0.2,
+            0.8
+          ],
+          [
+            "unknown",
+            0.9,
+            0.9
+          ]
+        ]
+      },
+      "cefull": {
+        "q": [
+          [
+            "a",
+            0.5,
+            0.6
+          ]
+        ]
+      },
+      "dense": {
+        "q": [
+          [
+            "b",
+            0.8
+          ],
+          [
+            "a",
+            0.3
+          ]
+        ]
+      },
+      "tfidf": {
+        "q": [
+          [
+            "a",
+            0.5,
+            0.4,
+            0.3
+          ]
+        ]
+      }
+    },
+    "expected": {
+      "a": {
+        "basic_present": 1.0,
+        "basic_rr": 0.01639344262295082,
+        "basic_rank_inv": 1.0,
+        "basic_score": 3.0,
+        "basic_score_n": 0.0,
+        "basic_bm25": 2.0,
+        "basic_bm25_n": 0.0,
+        "basic_best_rank_inv": 1e-09,
+        "basic_best_bm25": 2.0,
+        "basic_confidence": 0.0,
+        "src_bm25_title": 1.0,
+        "cefull_present": 1.0,
+        "cefull_rr": 0.01639344262295082,
+        "cefull_rank_inv": 1.0,
+        "cefull_dense": 0.5,
+        "cefull_dense_n": 0.0,
+        "cefull_ce": 0.6,
+        "cefull_ce_n": 0.0,
+        "dense_present": 1.0,
+        "dense_rr": 0.016129032258064516,
+        "dense_rank_inv": 0.5,
+        "dense_score": 0.3,
+        "dense_score_n": 0.0,
+        "tfidf_present": 1.0,
+        "tfidf_rr": 0.01639344262295082,
+        "tfidf_rank_inv": 1.0,
+        "tfidf_word": 0.5,
+        "tfidf_word_n": 0.0,
+        "tfidf_title_char": 0.4,
+        "tfidf_title_char_n": 0.0,
+        "tfidf_text_char": 0.3,
+        "tfidf_text_char_n": 0.0
+      },
+      "b": {
+        "ce100k_present": 1.0,
+        "ce100k_rr": 0.01639344262295082,
+        "ce100k_rank_inv": 1.0,
+        "ce100k_dense": 0.2,
+        "ce100k_dense_n": 0.0,
+        "ce100k_ce": 0.8,
+        "ce100k_ce_n": 0.0,
+        "dense_present": 1.0,
+        "dense_rr": 0.01639344262295082,
+        "dense_rank_inv": 1.0,
+        "dense_score": 0.8,
+        "dense_score_n": 1.0
+      }
+    }
+  },
+  "source_sha256": "1d5af78209f3cdd64629a1c4179a3aeef64884d0dd9ccaaadb5b9c59f5661901",
+  "provenance": "Synthetic cases evaluated against the original source, retained in a local archive"
+}

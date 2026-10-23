@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hybrid-search-ranking"
+version = "1.0.0"
+license = "MIT"
+license-files = ["LICENSE"]
+description = "Hybrid retrieval, LambdaRank and reciprocal rank fusion"
+readme = "README.md"
+requires-python = ">=3.12,<3.14"
+authors = [{name = "stefanimp"}]
+dependencies = ["numpy==2.3.4", "pandas==3.0.2", "scikit-learn==1.8.0", "lightgbm==4.6.0", "joblib==1.5.3"]
+
+[project.urls]
+Repository = "https://github.com/stefanimp/hybrid-search-ranking"
+Issues = "https://github.com/stefanimp/hybrid-search-ranking/issues"
+
+[project.optional-dependencies]
+report = ["reportlab>=4.4,<5"]
+dev = ["pytest>=8,<9", "ruff==0.17.1"]
+
+[project.scripts]
+hybrid-search = "hybrid_search.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]
